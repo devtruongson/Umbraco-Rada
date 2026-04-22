@@ -130,7 +130,7 @@ namespace WindowsFormsApp1
             // 
             // PreviewForm
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(1418, 517);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PreviewForm";
             this.ResumeLayout(false);
