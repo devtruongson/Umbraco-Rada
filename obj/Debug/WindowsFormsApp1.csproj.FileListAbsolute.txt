@@ -1,0 +1,13 @@
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Guna.UI2.dll
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PreviewForm.resources
