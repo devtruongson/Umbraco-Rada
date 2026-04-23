@@ -30,3 +30,5 @@ C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFor
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco .F13A2B11.Up2Date
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\SixLabors.ImageSharp.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Text.Encoding.CodePages.xml

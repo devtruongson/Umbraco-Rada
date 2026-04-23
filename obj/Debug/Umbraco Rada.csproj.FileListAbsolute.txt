@@ -3,21 +3,6 @@ C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsForms
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Azure.Core.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Azure.Storage.Blobs.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Azure.Storage.Common.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Guna.UI2.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Buffers.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.IO.Hashing.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Memory.Data.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Memory.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Text.Json.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Azure.Core.xml
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Azure.Storage.Blobs.xml
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\Azure.Storage.Common.xml
@@ -44,3 +29,6 @@ C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsForms
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\Umbraco .F13A2B11.Up2Date
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Debug\Umbraco Rada.csproj.Fody.CopyLocal.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Debug\System.Text.Encoding.CodePages.xml

@@ -338,6 +338,83 @@ namespace WindowsFormsApp1
             new UserGuideForm().ShowDialog(this);
         }
 
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            bool hasImage = false;
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                string path = row.Cells["colPath"].Value?.ToString();
+                if (string.IsNullOrEmpty(path)) continue;
+                string ext = Path.GetExtension(path).ToLower();
+                if (Array.IndexOf(ImageExtensions, ext) >= 0) { hasImage = true; break; }
+            }
+            btnOptimize.Visible = hasImage;
+        }
+
+        private void btnOptimize_Click(object sender, EventArgs e)
+        {
+            var items = new List<OptimizeItem>();
+            var tempDir = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "UmbOptimize");
+            System.IO.Directory.CreateDirectory(tempDir);
+
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                string path = row.Cells["colPath"].Value?.ToString();
+                string name = row.Cells["colFileName"].Value?.ToString();
+                if (string.IsNullOrEmpty(path) || string.IsNullOrEmpty(name)) continue;
+
+                string ext = Path.GetExtension(path).ToLower();
+                if (Array.IndexOf(ImageExtensions, ext) < 0) continue;
+
+                if (_isAzureMode)
+                {
+                    double mb = 0;
+                    double.TryParse(row.Cells["colSize"].Value?.ToString(), out mb);
+                    string tempPath = Path.Combine(tempDir, name);
+                    items.Add(new OptimizeItem {
+                        DisplayName  = name,
+                        OriginalPath = tempPath,
+                        OriginalSize = (long)(mb * 1048576),
+                        IsAzure      = true,
+                        BlobName     = path,
+                        GridRowIndex = row.Index
+                    });
+                }
+                else
+                {
+                    if (!File.Exists(path)) continue;
+                    var info = new FileInfo(path);
+                    items.Add(new OptimizeItem {
+                        DisplayName  = name,
+                        OriginalPath = path,
+                        OriginalSize = info.Length,
+                        IsAzure      = false,
+                        GridRowIndex = row.Index
+                    });
+                }
+            }
+
+            if (items.Count == 0) return;
+
+            using (var form = new OptimizeForm(items, _isAzureMode ? _azureContainer : null))
+            {
+                form.ShowDialog(this);
+                foreach (var item in form.Items)
+                {
+                    if (!item.Replaced) continue;
+                    try
+                    {
+                        long newSize = _isAzureMode
+                            ? item.OptimizedSize
+                            : new FileInfo(item.OriginalPath).Length;
+                        dataGridView1.Rows[item.GridRowIndex].Cells["colSize"].Value =
+                            (newSize / 1048576.0).ToString("F3");
+                    }
+                    catch { }
+                }
+            }
+        }
+
         private void btnRecent_Click(object sender, EventArgs e)
         {
             var entries = LoadRecent();

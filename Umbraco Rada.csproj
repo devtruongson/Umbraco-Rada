@@ -121,6 +121,12 @@
     <Reference Include="System.Threading.Tasks.Extensions">
       <HintPath>$(USERPROFILE)\.nuget\packages\system.threading.tasks.extensions\4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="SixLabors.ImageSharp">
+      <HintPath>..\packages\SixLabors.ImageSharp.2.1.9\lib\net472\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -136,6 +142,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserGuideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptimizeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />

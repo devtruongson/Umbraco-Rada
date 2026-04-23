@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             this.btnRecent = new Guna.UI2.WinForms.Guna2Button();
             this.btnConnectAzure = new Guna.UI2.WinForms.Guna2Button();
             this.btnUserGuide = new Guna.UI2.WinForms.Guna2Button();
+            this.btnOptimize = new Guna.UI2.WinForms.Guna2Button();
             this.lblFolderPath = new System.Windows.Forms.Label();
             this.panelSep = new System.Windows.Forms.Panel();
             this.contextMenuRecent = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -45,6 +46,7 @@ namespace WindowsFormsApp1
             this.panelTop.Controls.Add(this.btnRecent);
             this.panelTop.Controls.Add(this.btnConnectAzure);
             this.panelTop.Controls.Add(this.btnUserGuide);
+            this.panelTop.Controls.Add(this.btnOptimize);
             this.panelTop.Controls.Add(this.lblFolderPath);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
@@ -130,7 +132,25 @@ namespace WindowsFormsApp1
             this.btnUserGuide.TabIndex = 5;
             this.btnUserGuide.Text = "? User Guide";
             this.btnUserGuide.Click += new System.EventHandler(this.btnUserGuide_Click);
-            // 
+            //
+            // btnOptimize
+            //
+            this.btnOptimize.BorderRadius = 6;
+            this.btnOptimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOptimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOptimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOptimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOptimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.btnOptimize.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnOptimize.ForeColor = System.Drawing.Color.White;
+            this.btnOptimize.Location = new System.Drawing.Point(580, 14);
+            this.btnOptimize.Name = "btnOptimize";
+            this.btnOptimize.Size = new System.Drawing.Size(148, 36);
+            this.btnOptimize.TabIndex = 6;
+            this.btnOptimize.Text = "⚡ Optimize Images";
+            this.btnOptimize.Visible = false;
+            this.btnOptimize.Click += new System.EventHandler(this.btnOptimize_Click);
+            //
             // lblFolderPath
             // 
             this.lblFolderPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -184,6 +204,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             this.dataGridView1.CellToolTipTextNeeded += new System.Windows.Forms.DataGridViewCellToolTipTextNeededEventHandler(this.dataGridView1_CellToolTipTextNeeded);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // colFileName
             // 
@@ -261,6 +282,7 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2Button btnRecent;
         private Guna.UI2.WinForms.Guna2Button btnConnectAzure;
         private Guna.UI2.WinForms.Guna2Button btnUserGuide;
+        private Guna.UI2.WinForms.Guna2Button btnOptimize;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label lblFolderPath;
         private System.Windows.Forms.ContextMenuStrip contextMenuRecent;
