@@ -1,0 +1,32 @@
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe.config
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe.manifest
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\WindowsFormsApp1.application
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\WindowsFormsApp1.pdb
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\Azure.Core.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\Azure.Storage.Blobs.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\Azure.Storage.Common.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Buffers.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.IO.Hashing.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Memory.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Memory.Data.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Text.Json.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco Rada.csproj.AssemblyReference.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco Rada.csproj.SuggestedBindingRedirects.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe.config
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.AzureConnectForm.resources
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.PreviewForm.resources
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco Rada.csproj.GenerateResource.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco Rada.csproj.CoreCompileInputs.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco Rada.csproj.Fody.CopyLocal.cache
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe.manifest
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.application
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\Umbraco .F13A2B11.Up2Date
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
+C:\Users\truon\source\repos\Umbraco Rada\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
