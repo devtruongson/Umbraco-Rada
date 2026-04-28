@@ -81,11 +81,13 @@ namespace WindowsFormsApp1
 
             Section(rtb, "Toolbar Buttons");
             Row(rtb, "Open Folder",
-                "Browse and select a local folder. All files inside (including subfolders) are listed in the table. Files with excluded extensions (e.g. .pdf) are hidden automatically.");
+                "Browse and select a local folder. Only image and video files are listed — all other file types are ignored automatically.");
             Row(rtb, "Recent",
                 "Quickly reopen a recently used local folder or Azure container. Up to 10 entries are remembered. Select \"Clear history\" to reset the list.");
             Row(rtb, "Connect Azure",
                 "Connect to an Azure Blob Storage container. Enter the Connection String and Container Name, then click \"Test Connection\" to verify before connecting. The connection string is never saved — only the container name is remembered for convenience.");
+            Row(rtb, "⚡ Optimize Images",
+                "Appears automatically when you select one or more image rows in the table. Click to open the Image Optimizer window.");
             Row(rtb, "User Guide",
                 "Opens this help window.");
 
@@ -99,17 +101,29 @@ namespace WindowsFormsApp1
                 "Open the built-in image viewer for PNG, JPG, JPEG, BMP, GIF, and TIFF files. Zoom from 10 % to 300 % using the slider. In local mode, non-image files are opened with the default system application.");
 
             Spacer(rtb);
+            Section(rtb, "Image Optimizer");
+            Row(rtb, "JPEG Quality",
+                "Drag the slider (40–100 %) to set JPEG compression quality. Lower = smaller file, some visual loss.");
+            Row(rtb, "Lossy PNG",
+                "When checked, PNGs are colour-quantized to 256 colours (similar to TinyPNG), reducing file size by 60–80 %. Uncheck for lossless compression only.");
+            Row(rtb, "Optimize All",
+                "Compresses all files in the list with the current settings. A side-by-side before/after preview appears automatically for the first improved file.");
+            Row(rtb, "✕ Remove Selected",
+                "Remove the highlighted file from the optimizer list if you added it by mistake. The original file is not touched.");
+            Row(rtb, "Replace / Replace All",
+                "Overwrite the original file(s) with the optimized version(s). Files that are already at optimal size are skipped automatically. The button shows the count of files that can be replaced, e.g. \"Replace All (3)\".");
+
+            Spacer(rtb);
             Section(rtb, "Automatic Filters");
-            Row(rtb, "cache/ folder",
-                "Blobs whose path starts with \"cache/\" are excluded from the Azure listing.");
-            Row(rtb, ".pdf files",
-                "Files and blobs with the .pdf extension are hidden in both local and Azure mode.");
+            Bullet(rtb, "Only image and video files are shown: PNG, JPG, BMP, GIF, TIFF, WebP, ICO, MP4, MOV, AVI, WMV, MKV, WebM, and more.");
+            Bullet(rtb, "Azure blobs whose path starts with \"cache/\" are always excluded from the listing.");
 
             Spacer(rtb);
             Section(rtb, "Azure Mode Tips");
             Bullet(rtb, "After connecting, the table header shows the cloud icon and container name.");
             Bullet(rtb, "Preview downloads the blob to a temporary file before displaying it.");
             Bullet(rtb, "Replace uploads your local file directly — no intermediate copy is kept.");
+            Bullet(rtb, "Optimize Images downloads Azure blobs to a temp folder, compresses them, then re-uploads when you click Replace All.");
             Bullet(rtb, "Use \"Recent\" to quickly reconnect to a container (you will still be prompted for the connection string each session).");
 
             rtb.SelectionStart = 0;

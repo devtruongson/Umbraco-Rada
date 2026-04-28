@@ -11,10 +11,16 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private static readonly string[] ImageExtensions = { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff", ".tif" };
+        private static readonly string[] ImageExtensions = { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff", ".tif", ".webp", ".ico" };
+        private static readonly string[] VideoExtensions = { ".mp4", ".mov", ".avi", ".wmv", ".mkv", ".flv", ".webm", ".m4v", ".mpg", ".mpeg" };
 
         private static readonly string[] ExcludedBlobPrefixes = { "cache/", "cache\\" };
-        private static readonly string[] ExcludedExtensions = { ".pdf" };
+
+        private static bool IsMediaFile(string path)
+        {
+            string ext = Path.GetExtension(path).ToLower();
+            return Array.IndexOf(ImageExtensions, ext) >= 0 || Array.IndexOf(VideoExtensions, ext) >= 0;
+        }
         private static readonly Color ColorDownload = Color.FromArgb(52, 73, 94);
         private static readonly Color ColorReplace  = Color.FromArgb(52, 73, 94);
         private static readonly Color ColorPreview  = Color.FromArgb(52, 152, 219);
@@ -109,8 +115,7 @@ namespace WindowsFormsApp1
             dataGridView1.Rows.Clear();
             foreach (string filePath in Directory.GetFiles(folderPath, "*", SearchOption.AllDirectories))
             {
-                string ext = Path.GetExtension(filePath).ToLower();
-                if (Array.IndexOf(ExcludedExtensions, ext) >= 0) continue;
+                if (!IsMediaFile(filePath)) continue;
                 var info = new FileInfo(filePath);
                 dataGridView1.Rows.Add(info.Name, info.FullName, (info.Length / 1048576.0).ToString("F3"));
             }
@@ -154,13 +159,11 @@ namespace WindowsFormsApp1
             finally { Cursor = Cursors.Default; }
         }
 
-        private bool ShouldIncludeBlob(string blobName)
+        private static bool ShouldIncludeBlob(string blobName)
         {
             foreach (string prefix in ExcludedBlobPrefixes)
                 if (blobName.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)) return false;
-            string ext = Path.GetExtension(blobName).ToLower();
-            if (Array.IndexOf(ExcludedExtensions, ext) >= 0) return false;
-            return true;
+            return IsMediaFile(blobName);
         }
 
         private void LoadAzureBlobs()
